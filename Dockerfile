@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:alpine
 
 WORKDIR /usr/app
 
@@ -11,4 +11,4 @@ RUN npm run build
 
 FROM nginx
 EXPOSE 80 443
-COPY --from=builder /usr/app/build /usr/share/nginx/html
+COPY --from=0 /usr/app/build /usr/share/nginx/html
