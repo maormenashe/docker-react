@@ -19,4 +19,3 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-# FeZ/KN1WFaFVix+a3NYumjrlJ14EAuxbSa02dOrR
